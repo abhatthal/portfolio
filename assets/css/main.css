@@ -104,7 +104,12 @@ header h1 {
 }
 
 #content a:hover {
-    color: #202d50
+    color: #283149
+}
+
+#content h2 {
+    color: #283149;
+    border-bottom: 4px solid #283149;
 }
 
 footer {
