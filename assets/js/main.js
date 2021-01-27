@@ -16,7 +16,7 @@ zenscroll.setup(defaultDuration, edgeOffset);
 
 // Back to Top Icon Fade
 // https://stackoverflow.com/a/37293571
-let $btn = $('.back-to-top'),
+let $btn = $('#back-to-top'),
     isGoingToTop = false; // Prevents button flashing as scrolling up
 
 (function() {

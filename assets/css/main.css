@@ -64,65 +64,65 @@ header a {
     flex-shrink: 0;
 }
 
-.profile {
+#profile {
     width: 100px;
     /* width: 10%; */
     height: auto;
     padding-right: 20px;
 }
 
-.nav-left {
+#nav-left {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.nav-links {
+#nav-links {
     display: flex;
     flex-direction: row;
 
     list-style-type: none;
 }
 
-.nav-links li {
+#nav-links li {
     padding: 0px 20px;
 }
 
-.nav-links li a:hover {
+#nav-links li a:hover {
     color: #596070;
 }
 
 header a,
-#content a {
+main a {
     text-decoration: none;
     transition: all 0.3s ease 0s;
     font-weight: bold;
 }
 
-#content {
+main {
     width: 50%;
     margin: 0 auto;
     margin-top: 120px;
 }
 
-#content a {
+main a {
     color: #3d5595
 }
 
-#content a:hover {
+main a:hover {
     color: #283149
 }
 
-#content h1,
-#content h2,
-#content h3,
-#content h4,
-#content h5,
-#content h6 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
     color: #283149;
 }
 
-#content h2 {
+main h2 {
     border-bottom: 4px solid #283149;
 }
 
@@ -136,6 +136,11 @@ header a,
     padding: 0 16px;
 }
 
+.google-maps {
+    min-width: 300px;
+    overflow: hidden;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -147,8 +152,8 @@ footer {
     padding: 10px;
 }
 
-.back-to-top .up,
-.back-to-top .up-left {
+#back-to-top #up,
+#back-to-top #up-left {
     position: fixed;
     right: 40px;
     bottom: 40px;
@@ -157,16 +162,16 @@ footer {
 
 /* https://stackoverflow.com/a/19753034 */
 /* https://css-tricks.com/swapping-svg-icons/ */
-.back-to-top .up,
-.back-to-top {
+#back-to-top #up,
+#back-to-top {
     display: none;
 }
 
-.back-to-top:hover .up-left,
-.back-to-top:active .up-left {
+#back-to-top:hover #up-left,
+#back-to-top:active #up-left {
     display: none;
 }
-.back-to-top:hover .up,
-.back-to-top:active .up {
+#back-to-top:hover #up,
+#back-to-top:active #up {
     display: block;
 }
