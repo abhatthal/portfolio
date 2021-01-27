@@ -44,6 +44,6 @@ let $btn = $('.back-to-top'),
 
 // Hide the button when clicked
 $btn.click(function() {
-    $btn.fadeOut();
+    $btn.fadeOut(200);
     isGoingToTop = true;
 });
