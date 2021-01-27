@@ -60,7 +60,8 @@ header a {
 }
 
 #name {
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 170%;
     flex-shrink: 0;
 }
 
@@ -126,19 +127,26 @@ main h2 {
     border-bottom: 4px solid #283149;
 }
 
+/* https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
 .row {
     display: flex;
-    padding: 0 0 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .column {
-    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
     padding: 0 16px;
+    min-width: 320px;
 }
 
 .google-maps {
-    min-width: 300px;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
 footer {
@@ -167,11 +175,15 @@ footer {
     display: none;
 }
 
-#back-to-top:hover #up-left,
-#back-to-top:active #up-left {
-    display: none;
-}
-#back-to-top:hover #up,
-#back-to-top:active #up {
-    display: block;
+/* https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c */
+@media(hover: hover) and (pointer: fine) {
+    #back-to-top:hover #up-left,
+    #back-to-top:active #up-left {
+        display: none;
+    }
+
+    #back-to-top:hover #up,
+    #back-to-top:active #up {
+        display: block;
+    }
 }
