@@ -136,9 +136,17 @@ main h2 {
     min-width: 320px;
 }
 
-/* .column p {
-    line-height: 114px;
-} */
+.column #email,
+.column #location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column #email svg,
+.column #location svg {
+    padding-right: 40px;
+}
 
 .google-maps {
     overflow: hidden;
