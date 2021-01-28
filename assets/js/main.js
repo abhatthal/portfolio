@@ -11,7 +11,7 @@ zenscroll.setup(defaultDuration, edgeOffset);
 
 
 // Disable scroll restoration
-// history.scrollRestoration = 'manual';
+history.scrollRestoration = 'manual';
 
 
 // Back to Top Icon Fade
