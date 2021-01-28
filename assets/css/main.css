@@ -119,6 +119,14 @@ main h2 {
     border-bottom: 4px solid #283149;
 }
 
+.job .top-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: -30px 0;
+}
+
 /* https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
 .row {
     display: flex;
@@ -136,15 +144,18 @@ main h2 {
     min-width: 320px;
 }
 
-.column #email,
-.column #location {
+.icon-align {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.column #email svg,
-.column #location svg {
+.icon-align svg {
+    padding-right: 20px;
+}
+
+#email svg,
+#location svg {
     padding-right: 40px;
 }
 
