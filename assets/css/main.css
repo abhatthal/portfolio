@@ -1,10 +1,7 @@
 body {
-    /* zoom: 150%;
-    -ms-zoom: 1.5;
-    -webkit-zoom: 1.5; */
-
     background-color: #d3d6db;
     font-family: 'Roboto', sans-serif;
+    font-size: 140%;
     margin: 0;
 }
 
@@ -60,16 +57,15 @@ header a {
 }
 
 #name {
-    /* font-size: 35px; */
     font-size: 170%;
     flex-shrink: 0;
 }
 
 #profile {
-    width: 100px;
+    width: 110px;
     /* width: 10%; */
     height: auto;
-    padding-right: 20px;
+    padding-right: 22px;
 }
 
 #nav-left {
@@ -89,10 +85,6 @@ header a {
     padding: 0px 20px;
 }
 
-#nav-links li a:hover {
-    color: #596070;
-}
-
 header a,
 main a {
     text-decoration: none;
@@ -103,7 +95,7 @@ main a {
 main {
     width: 50%;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
 main a {
@@ -140,13 +132,17 @@ main h2 {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    padding: 0 16px;
+    padding: 0 20px;
     min-width: 320px;
 }
 
+/* .column p {
+    line-height: 114px;
+} */
+
 .google-maps {
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -156,7 +152,7 @@ footer {
     
     background-color: #e3e6eb;
     color: #736e6e;
-    font-size: 12px;
+    font-size: 10px;
     padding: 10px;
 }
 
@@ -177,6 +173,10 @@ footer {
 
 /* https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c */
 @media(hover: hover) and (pointer: fine) {
+    #nav-links li a:hover {
+        color: #596070;
+    }
+
     #back-to-top:hover #up-left,
     #back-to-top:active #up-left {
         display: none;
