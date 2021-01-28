@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 // Zenscroll Settings
 let defaultDuration = 1200; // ms
-let edgeOffset = 110; // px
+let edgeOffset = 130; // px
 zenscroll.setup(defaultDuration, edgeOffset);
 
 
