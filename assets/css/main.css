@@ -167,7 +167,6 @@ button {
 .icon-align img {
     height: 48px;
     width: 48px;
-    /* padding-right: 20px; */
     border-radius: 10px;
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
@@ -184,12 +183,29 @@ button {
 
 /* https://stackoverflow.com/a/6509239 */
 .tech-stack ul {
-    -moz-column-count: 3;
+    -moz-column-count: 2;
     -moz-column-gap: 20px;
-    -webkit-column-count: 3;
+    -webkit-column-count: 2;
     -webkit-column-gap: 20px;
-    column-count: 3;
+    column-count: 2;
     column-gap: 20px;
+}
+
+.contributors h4 {
+    margin-bottom: -10px;
+}
+
+.contributors .icon-align img {
+    height: 38px;
+    width: 38px;
+}
+
+.contributors .icon-align .img-wrapper {
+    padding: 30px 20px;
+}
+
+.contributors {
+    padding-bottom: 10px;
 }
 
 #email,
