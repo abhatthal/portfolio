@@ -121,13 +121,6 @@ main h2 {
     margin-bottom: 12px;
 }
 
-button {
-    background-color: transparent;
-    font-size: 110%;
-    padding: 20px;
-    margin-top: 10px;
-}
-
 .job .top-line {
     display: flex;
     flex-direction: row;
